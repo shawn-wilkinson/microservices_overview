@@ -4,41 +4,65 @@
 #####Overview:<br>
 -What are microservices?<br>
 -Why are they so good?<br>
+-Best Practices<br>
 
 ---
-##What Is TDD?
+##What are Microservices?
 
-###More than "writing tests first"...<br>
-TDD is continual testing, coding, design and documentation.
+####"Small, autonomous services  that work together"
+
 +++
-####In a nutshell:
-  1. Write a test.
-  2. Run all tests. The test should fail.
-  3. Write the minimum amount of code to pass the test.
-  4. Run all tests. They should pass.
-  5. Refactor your code - optional.
-  
+![Image-Absolute](https://help.mypurecloud.com/wp-content/uploads/2016/02/mono-vs-micro.png)
 +++
-![Image-Absolute](https://s3.amazonaws.com/media-p.slid.es/uploads/jlopezmo/images/587930/tdd-circle-of-life.png)
+##What are Microservices?
+
+-They are small.
+-They do one thing.
+-They are autonomous.
+  - You should be able to make a change and deploy a service independently.
+  - Expose the bare minimum to consumers. Too much sharing increases the amount of coordination required when making chagnes.
+  - All communication is via network calls / the provider's API
+
 +++
-###Uncle Bob's Three Laws of TDD:<br>
-1. You can't write any production code until you have first written a failing unit test.<br>
-2. You can't write more of a unit test than is sufficient to fail, and not compiling is failing.<br>
-3. You can't write more production code than is sufficient to pass the currently failing unit test<br>
-[Credit to Robert C. Martin](http://programmer.97things.oreilly.com/wiki/index.php/Uncle_Bob)
+##Why use them?
+    - You can mix up technology
+      - Use the best tool for the job instead of something that "works" for everything
+      - Speed up adoption of new technology. Test out a new technology on a low-risk service first before a wider roll-out.
+    - Resilience:
+      - If a monolith fails, everything can go down.
+      - When something goes wrong in a microservice, it is easier to contain it to that service.
+      - By building services to handle the "total failure" of other services, you can plan how your system degrades.
+    - Scaling:
+      - Allocate resources to the services that need it most
+    - Ease of Deployment
+      - In a monolith, you must deploy the whole app in order to put one change into production. As this is high risk, changes will likely build up until we make one big release.
+      - Microservices can be deployed with much lower risk. Deploys are typically more frequent, making it easier to isolate bugs, and get updates to users more quickly.
+    - Team Organization
+      - Divvy up a large codebase to smaller teams. Keeps people from stepping on each other's toes. Provides benefits of colocation to a larger, spread-out team.
+    - Reusable
+      -Smaller, single-responsibility applications are easier to re-use. Monoliths don't expose their finer-grained innards.
+    - Replaceable
+      - Smaller compartmentalized applications are easier and less risky to replace
+      - Monoliths can become little-understood legacy systems that everyone knows should be replaced but nobody wants to.
+      
 ---
-###Why Do We Use TDD?
-1. Code is written to specification.
+##Drawbacks
+  - More complicated. 
+  - Teams need to be better at deployment and monitoring
+  - More decisions to make.
+    "Be worried about what happens between the boxes, and be liberal in what happens inside."
 
-2. Tests serve as documentation for the intention behind the subject.
+---
+##Best Practices:
 
-3. We can push up with confidence.
-+++
-###Why Do We Use TDD?
-4. There is less duplication.
-
-5. It promotes refactoring and more maintainable code.
-
-6. Incremental development increases code coverage.
-
-7. After the fact testing: less rigorous and not tied to functionality
+  - Loose Coupling
+    -Services should know as little as possible about the services they collaborate with.
+  - High Cohesion
+    -Place related behavior in the same spot. A change in functionality requires fewer, more localized code changes.
+  - Bounded Context
+    "specific responsibility enforced by explicit boundaries"
+  - Shared and Hidden Models
+     - Some models might be necessary for services to communicate, some are isolated to a single service.
+     - Keeping non-essential details hidden naturally promotes decoupling and cohesion
+  - Avoid Premature Decomposition
+    -Don't break servies down before the boundaries are clear. You may have to make expensive changes down the road if the boundaries aren't appropriate.
