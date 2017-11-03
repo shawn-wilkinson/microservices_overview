@@ -1,20 +1,20 @@
 ## Microservices
 
 ---
-####Overview:<br>
+##Overview:<br>
 -What are microservices?<br>
 -Why are they so good?<br>
 -Best Practices<br>
 
 ---
-###What are Microservices?
+##What are Microservices?
 
-####"Small, autonomous services  that work together"
+"Small, autonomous services  that work together"
 
 +++
 ![Image-Absolute](https://help.mypurecloud.com/wp-content/uploads/2016/02/mono-vs-micro.png)
 +++
-###What are Microservices?
+##What are Microservices?
 
 -They are small.
 -They do one thing.
@@ -24,7 +24,7 @@
   - All communication is via network calls / the provider's API
 
 +++
-###Why use them?
+##Why use them?
     - You can mix up technology
       - Use the best tool for the job instead of something that "works" for everything
       - Speed up adoption of new technology. Test out a new technology on a low-risk service first before a wider roll-out.
@@ -46,14 +46,14 @@
       - Monoliths can become little-understood legacy systems that everyone knows should be replaced but nobody wants to.
       
 ---
-###Drawbacks
+##Drawbacks
   - More complicated. 
   - Teams need to be better at deployment and monitoring
   - More decisions to make.
     "Be worried about what happens between the boxes, and be liberal in what happens inside."
 
 ---
-###Best Practices:
+##Best Practices:
 
   - Loose Coupling
     -Services should know as little as possible about the services they collaborate with.
