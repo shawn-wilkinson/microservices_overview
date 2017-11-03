@@ -22,7 +22,7 @@ What are Microservices?
 ---
 Why use them?
 - You can mix up technology:<br>
-  - Use the best tool for the job instead of something that "works" for everything<br>
+  - Use the best tool for the job instead of something that "works" for everything.<br>
   - Speed up adoption of new technology. Test out a new technology on a low-risk service first before a wider roll-out.<br>
 +++
 - Resilience:<br>
@@ -31,7 +31,7 @@ Why use them?
   - By building services to handle the "total failure" of other services, you can plan how your system degrades.<br>
 +++
 - Scaling:<br>
-  - Allocate resources to the services that need it most<br>
+  - Allocate resources to the services that need it most.<br>
 +++
 - Ease of Deployment:<br>
   - In a monolith, you must deploy the whole app in order to put one change into production. As this is high risk, changes will likely build up until we make one big release.<br>
@@ -42,16 +42,16 @@ Why use them?
 +++
 - Reusable:<br>
   - Smaller, single-responsibility applications are easier to re-use. Monoliths don't expose their finer-grained innards.<br>
++++
 - Replaceable:<br>
-  - Smaller compartmentalized applications are easier and less risky to replace<br>
+  - Smaller compartmentalized applications are easier and less risky to replace.<br>
   - Monoliths can become little-understood legacy systems that everyone knows should be replaced but nobody wants to.<br>
       
 ---
 Drawbacks:
   - More complicated. 
-  - Teams need to be better at deployment and monitoring
+  - Teams need to be better at deployment and monitoring.
   - More decisions to make.
-    "Be worried about what happens between the boxes, and be liberal in what happens inside."
 
 ---
 ##Best Practices:
@@ -61,8 +61,11 @@ Drawbacks:
   - Place related behavior in the same spot. A change in functionality requires fewer, more localized code changes.
 - Bounded Context
   "specific responsibility enforced by explicit boundaries"
++++
 - Shared and Hidden Models
   - Some models might be necessary for services to communicate, some are isolated to a single service.
-  - Keeping non-essential details hidden naturally promotes decoupling and cohesion
+  - Keeping non-essential details hidden naturally promotes decoupling and cohesion.
+-System Architecture
+  "Be worried about what happens between the boxes, and be liberal in what happens inside."
 - Avoid Premature Decomposition
    - Don't break servies down before the boundaries are clear. You may have to make expensive changes down the road if the boundaries aren't appropriate.
