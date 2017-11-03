@@ -25,9 +25,9 @@ What are Microservices?
 
 ---
 ##Why use them?
-    - You can mix up technology:<br>
-      - Use the best tool for the job instead of something that "works" for everything<br>
-      - Speed up adoption of new technology. Test out a new technology on a low-risk service first before a wider roll-out.<br>
+- You can mix up technology:<br>
+  - Use the best tool for the job instead of something that "works" for everything<br>
+  - Speed up adoption of new technology. Test out a new technology on a low-risk service first before a wider roll-out.<br>
 +++
 - Resilience:<br>
   - If a monolith fails, everything can go down.<br>
