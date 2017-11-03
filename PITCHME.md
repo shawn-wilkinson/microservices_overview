@@ -21,6 +21,7 @@ What are Microservices?
 
 ---
 Why use them?
++++
 - You can mix up technology:<br>
   - Use the best tool for the job instead of something that "works" for everything.<br>
   - Speed up adoption of new technology. Test out a new technology on a low-risk service first before a wider roll-out.<br>
@@ -54,18 +55,23 @@ Drawbacks:
   - More decisions to make.
 
 ---
-##Best Practices:
-- Loose Coupling
-  - Services should know as little as possible about the services they collaborate with.
-- High Cohesion
-  - Place related behavior in the same spot. A change in functionality requires fewer, more localized code changes.
-- Bounded Context
-  "specific responsibility enforced by explicit boundaries"
+Best Practices:
 +++
-- Shared and Hidden Models
-  - Some models might be necessary for services to communicate, some are isolated to a single service.
-  - Keeping non-essential details hidden naturally promotes decoupling and cohesion.
--System Architecture
-  "Be worried about what happens between the boxes, and be liberal in what happens inside."
-- Avoid Premature Decomposition
-   - Don't break servies down before the boundaries are clear. You may have to make expensive changes down the road if the boundaries aren't appropriate.
+- Loose Coupling<br>
+  - Services should know as little as possible about the services they collaborate with.<br>
++++
+- High Cohesion<br>
+  - Place related behavior in the same spot. A change in functionality requires fewer, more localized code changes.<br>
++++
+- Bounded Context<br>
+  "specific responsibility enforced by explicit boundaries"<br>
++++
+- Shared and Hidden Models<br>
+  - Some models might be necessary for services to communicate, some are isolated to a single service.<br>
+  - Keeping non-essential details hidden naturally promotes decoupling and cohesion.<br>
++++
+-System Architecture<br>
+  "Be worried about what happens between the boxes, and be liberal in what happens inside."<br>
++++
+- Avoid Premature Decomposition<br>
+   - Don't break servies down before the boundaries are clear. You may have to make expensive changes down the road if the boundaries aren't appropriate.<br>
