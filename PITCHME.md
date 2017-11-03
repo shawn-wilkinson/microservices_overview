@@ -57,20 +57,20 @@ Drawbacks:
 ---
 Best Practices:
 +++
-- Loose Coupling<br>
+- Loose Coupling:<br>
   - Services should know as little as possible about the services they collaborate with.<br>
 +++
-- High Cohesion<br>
+- High Cohesion:<br>
   - Place related behavior in the same spot. A change in functionality requires fewer, more localized code changes.<br>
 +++
-- Bounded Context<br>
+- Bounded Context:<br>
   "specific responsibility enforced by explicit boundaries"<br>
-- Shared and Hidden Models<br>
+- Shared and Hidden Models:<br>
   - Some models might be necessary for services to communicate, some are isolated to a single service.<br>
   - Keeping non-essential details hidden naturally promotes decoupling and cohesion.<br>
 +++
-- System Architecture<br>
+- System Architecture:<br>
   "Be worried about what happens between the boxes, and be liberal in what happens inside."<br>
 +++
-- Avoid Premature Decomposition<br>
+- Avoid Premature Decomposition:<br>
    - Don't break servies down before the boundaries are clear. You may have to make expensive changes down the road if the boundaries aren't appropriate.<br>
