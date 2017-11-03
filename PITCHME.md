@@ -65,7 +65,6 @@ Best Practices:
 +++
 - Bounded Context<br>
   "specific responsibility enforced by explicit boundaries"<br>
-+++
 - Shared and Hidden Models<br>
   - Some models might be necessary for services to communicate, some are isolated to a single service.<br>
   - Keeping non-essential details hidden naturally promotes decoupling and cohesion.<br>
