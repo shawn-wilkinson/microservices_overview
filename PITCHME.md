@@ -7,7 +7,7 @@ Overview:<br>
 - Best Practices<br>
 
 ---
-##What are Microservices?
+What are Microservices?
 
 "Small, autonomous services  that work together"
 
@@ -24,7 +24,7 @@ What are Microservices?
   - All communication is via network calls / the provider's API<br>
 
 ---
-##Why use them?
+Why use them?
 - You can mix up technology:<br>
   - Use the best tool for the job instead of something that "works" for everything<br>
   - Speed up adoption of new technology. Test out a new technology on a low-risk service first before a wider roll-out.<br>
@@ -51,7 +51,7 @@ What are Microservices?
   - Monoliths can become little-understood legacy systems that everyone knows should be replaced but nobody wants to.<br>
       
 ---
-##Drawbacks
+Drawbacks:
   - More complicated. 
   - Teams need to be better at deployment and monitoring
   - More decisions to make.
