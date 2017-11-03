@@ -8,20 +8,16 @@ Overview:<br>
 
 ---
 What are Microservices?
-
-"Small, autonomous services  that work together"
-
 +++
 ![Image-Absolute](https://help.mypurecloud.com/wp-content/uploads/2016/02/mono-vs-micro.png)
 +++
 What are Microservices?
 
+"Small, autonomous services  that work together"<br>
+
 - They are small.<br>
 - They do one thing.<br>
 - They are autonomous.<br>
-  - You should be able to make a change and deploy a service independently.<br>
-  - Expose the bare minimum to consumers. Too much sharing increases the amount of coordination required when making chagnes.<br>
-  - All communication is via network calls / the provider's API<br>
 
 ---
 Why use them?
