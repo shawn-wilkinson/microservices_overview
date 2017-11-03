@@ -2,9 +2,9 @@
 
 ---
 Overview:<br>
--What are microservices?<br>
--Why are they so good?<br>
--Best Practices<br>
+- What are microservices?<br>
+- Why are they so good?<br>
+- Best Practices<br>
 
 ---
 ##What are Microservices?
@@ -16,9 +16,9 @@ Overview:<br>
 +++
 What are Microservices?
 
--They are small.<br>
--They do one thing.<br>
--They are autonomous.<br>
+- They are small.<br>
+- They do one thing.<br>
+- They are autonomous.<br>
   - You should be able to make a change and deploy a service independently.<br>
   - Expose the bare minimum to consumers. Too much sharing increases the amount of coordination required when making chagnes.<br>
   - All communication is via network calls / the provider's API<br>
