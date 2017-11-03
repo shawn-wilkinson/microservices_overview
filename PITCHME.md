@@ -69,7 +69,7 @@ Best Practices:
   - Some models might be necessary for services to communicate, some are isolated to a single service.<br>
   - Keeping non-essential details hidden naturally promotes decoupling and cohesion.<br>
 +++
--System Architecture<br>
+- System Architecture<br>
   "Be worried about what happens between the boxes, and be liberal in what happens inside."<br>
 +++
 - Avoid Premature Decomposition<br>
